@@ -17,6 +17,19 @@ export default function Contact() {
     e.preventDefault()
     setStatus(null)
 
+    // name and email validation
+    const name = form.current["from_name"].value.trim();
+    const email = form.current["from_email"].value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!name) {
+      setStatus({ success: false, message: "Please enter your name." });
+      return;
+    }
+    if (!emailRegex.test(email)) {
+      setStatus({ success: false, message: "Please enter a valid email address." });
+      return;
+    }
+
     const serviceID = 'service_1905'
     const templateID = 'template_ugqqk2l'
     const userID = '703fYIqZz9CTLJh10'
