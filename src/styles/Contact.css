@@ -1,0 +1,136 @@
+.contact-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: var(--accent-cyan);
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: block;
+  color: var(--accent-indigo);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: rgba(34, 211, 238, 0.1);
+  color: inherit;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  background-color: rgba(34, 211, 238, 0.15);
+}
+
+body.light .contact-form input,
+body.light .contact-form textarea {
+  background-color: rgba(6, 182, 212, 0.1);
+}
+
+body.light .contact-form input:focus,
+body.light .contact-form textarea:focus {
+  background-color: rgba(6, 182, 212, 0.15);
+  border-color: var(--accent-cyan-light);
+}
+
+.btn-primary {
+  background-color: var(--accent-cyan);
+  color: var(--bg-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--accent-indigo);
+  outline: none;
+}
+
+body.light .btn-primary {
+  background-color: var(--accent-cyan-light);
+  color: var(--bg-light);
+}
+
+body.light .btn-primary:hover,
+body.light .btn-primary:focus {
+  background-color: var(--accent-indigo);
+  color: var(--bg-light);
+}
+
+.form-status {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.form-status.success {
+  color: #22c55e; /* green */
+}
+
+.form-status.error {
+  color: #ef4444; /* red */
+}
+
+.social-links {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icon {
+  color: var(--accent-cyan);
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: var(--accent-indigo);
+  outline: none;
+}
+
+.footer{
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+body.light .social-icon {
+  color: var(--accent-cyan-light);
+}
+
+body.light .social-icon:hover,
+body.light .social-icon:focus {
+  color: var(--accent-cyan-light);
+}
