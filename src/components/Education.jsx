@@ -13,12 +13,12 @@ export default function Education() {
       <div className="education-card">
         <h3>Senior Secondary (12th)</h3>
         <p className="college-name">Eminent English Medium School (CBSE)</p>
-        <p className="grad-year">Passed: 2020</p>
+        <p className="grad-year">Passed: 2022</p>
       </div>
       <div className="education-card">
         <h3>High School(10th)</h3>
         <p className="college-name">Eminent English Medium School (CBSE)</p>
-        <p className="grad-year">Passed: 2022</p>
+        <p className="grad-year">Passed: 2020</p>
       </div>
     </section>
   )
